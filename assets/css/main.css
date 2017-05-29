@@ -3,13 +3,14 @@ body{
 	background-color: #2C2D2B;
 	margin: 0;
 }
-/* Menú */
+
+/*Menú*/
 nav{
 	background-color: #CA3C25;
-	overflow: hidden; /*le quito los espacios a mi nav*/
+	overflow: hidden;
 }
 .menu{
-	margin-left: 6rem; /* 1rem = 16px */
+	margin-left: 6rem;
 }
 .menu li{
 	display: inline-block;
@@ -17,17 +18,17 @@ nav{
 .menu li a{
 	color: #EBB26B;
 	text-decoration: none;
-	font-weight: 500;
 	padding: 2rem;
+	font-weight: 500;
 }
 .menu li a:hover{
 	color: #FEC378;
-	background-color: #CCDB33;
+	background-color: #A73320;
 }
-/*Sección Panditas*/
+/*Sección Pandas*/
 .pictures{
 	text-align: center;
-	padding-top: 3rem;
+	margin-top: 3rem;
 }
 .pandas{
 	width: 200px;
@@ -36,59 +37,133 @@ nav{
 	display: inline-block;
 	background-size: cover;
 	background-position: center;
-	padding: 0 1rem;
+	margin: 0 1rem;
 }
 .panda-uno{
 	background-image: url(../img/panda1.jpg);
+	/* código refactorizado
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	margin: 0 1rem;
+	*/
 }
 .panda-dos{
 	background-image: url(../img/panda2.jpg);
+	/* código refactorizado
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	margin: 0 1rem;
+	*/
 }
 .panda-tres{
 	background-image: url(../img/panda3.jpg);
+	/* código refactorizado
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	margin: 0 1rem;
+	*/
 }
 .panda-cuatro{
 	background-image: url(../img/panda4.jpg);
+	/* código refactorizado
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	margin: 0 1rem;
+	*/
 }
 .fa-times{
 	color: #FFF;
+	float: right;
+	padding: 0.3rem;
 	cursor: pointer;
-	float: right;
 }
-.textos{
+.fa-times:hover{
+	color: #A73320;
+}
+/*Sección botones*/
+#button{
 	text-align: center;
-	padding: 0 3.5rem;
 }
-.parrafo{
-	width: 450px;
-	text-align: justify;
-	display: inline-block;
-	color: #FFF;
-	font-size: 14px;
-	font-weight: 400;
-}
-#p-uno{
-	float: left;
-}
-#p-dos{
-	float: right;
-}
-/*Botones*/
 .botones{
 	display: inline-block;
 	width: 19rem;
 	height: 2rem;
-	background-color: #CCDB33;
+	background-color: #CA3C25;
 	cursor: pointer;
+	margin-top: 1rem;
 }
-#button{
-	text-align: center;
+.botones:hover{
+	background-color: #A73320;
+}
+.botones p:hover{
+	color: #FFF;
 }
 .botones p{
 	margin: 0;
 	padding-top: 0.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
 }
-
+/*Sección parrafos*/
+.textos{
+	text-align: center;
+	padding: 0 8.5rem;
+}
+.parrafo{
+	width: 430px;
+	text-align: justify;
+	display: inline-block;
+	margin: 0 1rem;
+	color: #717074;
+	font-weight: 400;
+	font-size: 14px;
+}
+.p-dos{
+	float: right;
+}
+.p-uno{
+	float: left;
+}
+/*Refactorizando código
+#parrafo-uno{
+	width: 440px;
+	text-align: justify;
+	display: inline-block;
+	margin: 0 1rem;
+	color: #717074;
+}
+#parrafo-dos{
+	width: 440px;
+	text-align: justify;
+	display: inline-block;
+	margin: 0 1rem;
+	color: #717074;
+}
+*/
 .fantasma{
 	display: none;
+}
+.nuevasFotos{
+	width: 100%;
+	text-align: center;
+}
+.nuevos-panda{
+	display: inline-block;
+	padding: 0 3rem;
 }
