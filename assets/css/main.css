@@ -1,0 +1,94 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #2C2D2B;
+	margin: 0;
+}
+/* Menú */
+nav{
+	background-color: #CA3C25;
+	overflow: hidden; /*le quito los espacios a mi nav*/
+}
+.menu{
+	margin-left: 6rem; /* 1rem = 16px */
+}
+.menu li{
+	display: inline-block;
+}
+.menu li a{
+	color: #EBB26B;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 2rem;
+}
+.menu li a:hover{
+	color: #FEC378;
+	background-color: #CCDB33;
+}
+/*Sección Panditas*/
+.pictures{
+	text-align: center;
+	padding-top: 3rem;
+}
+.pandas{
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	padding: 0 1rem;
+}
+.panda-uno{
+	background-image: url(../img/panda1.jpg);
+}
+.panda-dos{
+	background-image: url(../img/panda2.jpg);
+}
+.panda-tres{
+	background-image: url(../img/panda3.jpg);
+}
+.panda-cuatro{
+	background-image: url(../img/panda4.jpg);
+}
+.fa-times{
+	color: #FFF;
+	cursor: pointer;
+	float: right;
+}
+.textos{
+	text-align: center;
+	padding: 0 3.5rem;
+}
+.parrafo{
+	width: 450px;
+	text-align: justify;
+	display: inline-block;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 400;
+}
+#p-uno{
+	float: left;
+}
+#p-dos{
+	float: right;
+}
+/*Botones*/
+.botones{
+	display: inline-block;
+	width: 19rem;
+	height: 2rem;
+	background-color: #CCDB33;
+	cursor: pointer;
+}
+#button{
+	text-align: center;
+}
+.botones p{
+	margin: 0;
+	padding-top: 0.5rem;
+}
+
+.fantasma{
+	display: none;
+}
