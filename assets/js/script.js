@@ -29,7 +29,7 @@ document.getElementById('boton-restaurar').addEventListener('click', function(){
 //Funcionalidad botón origin
 document.getElementById('boton-origen').addEventListener('click', function(){
 	//al hacer click en el botón indicado prendo el switch de toggle
-	/*¿Que hace toggle? Verifica si mi elemento tiene la clase 'fantasma', si la tiene
+	/*¿Que hace toggle? Verifica si mi elemento tiene la clase 'fantasma-hidden', si la tiene
 	se la quita, si no la tiene se la agrega y así sucesivament.
 	Pone la clase, quita la clase, pone la clase, quita la clase (y así en cada click)
 	*/
@@ -42,7 +42,7 @@ var botonOrigen = document.getElementById('boton-origen');
 botonOrigen.addEventListener('click', parrafoIzquierdo);
 function parrafoIzquierdo(){
 	var parrafoIzquierdo = document.getElementsByClassName('parrafo')[0];
-	parrafoIzquierdo.classList.toggle('fantasma');
+	parrafoIzquierdo.classList.toggle('fantasma-hidden');
 }
 */
 
@@ -57,7 +57,7 @@ var botonExtincion = document.getElementById('boton-extincion');
 botonExtincion.addEventListener('click', parrafoDerecho);
 function parrafoDerecho(){
 	var parrafoDerecho = document.getElementsByClassName('parrafo')[1];
-	parrafoDerecho.classList.toggle('fantasma');
+	parrafoDerecho.classList.toggle('fantasma-hidden');
 }
 */
 
