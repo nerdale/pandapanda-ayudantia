@@ -34,7 +34,7 @@ document.getElementById('boton-origen').addEventListener('click', function(){
 	Pone la clase, quita la clase, pone la clase, quita la clase (y así en cada click)
 	*/
 	var parrafoIzquierdo = document.getElementsByClassName('parrafo')[0];
-	parrafoIzquierdo.classList.toggle('fantasma');
+	parrafoIzquierdo.classList.toggle('fantasma-hidden');
 })
 
 /* LO MISMO QUE ARRIBA PERO OTRO MANERA DE ESCRIBIRLO
@@ -49,7 +49,7 @@ function parrafoIzquierdo(){
 //funcionalidad botoón extinción
 document.getElementById('boton-extincion').addEventListener('click', function(){
 	var parrafoIzquierdo = document.getElementsByClassName('parrafo')[1];
-	parrafoIzquierdo.classList.toggle('fantasma');
+	parrafoIzquierdo.classList.toggle('fantasma-hidden');
 })
 
 /* LO MISMO QUE ARRIBA PERO OTRO MANERA DE ESCRIBIRLO

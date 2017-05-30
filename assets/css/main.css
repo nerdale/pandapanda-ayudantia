@@ -158,6 +158,9 @@ nav{
 .fantasma{
 	display: none;
 }
+.fantasma-hidden{
+	visibility: hidden;
+}
 .nuevasFotos{
 	width: 100%;
 	text-align: center;
