@@ -18,6 +18,7 @@ document.getElementsByClassName('fa')[3].addEventListener('click', function(){
 
 //boton restaurar todas las fotos
 document.getElementById('boton-restaurar').addEventListener('click', function(){
+	//le quito la clase fantasma que le agregué anteriormente, o sea, le remuevo el display none
 	document.getElementsByClassName('pandas')[0].classList.remove('fantasma');
 	document.getElementsByClassName('pandas')[1].classList.remove('fantasma');
 	document.getElementsByClassName('pandas')[2].classList.remove('fantasma');
@@ -26,13 +27,17 @@ document.getElementById('boton-restaurar').addEventListener('click', function(){
 
 
 //Funcionalidad botón origin
-
 document.getElementById('boton-origen').addEventListener('click', function(){
+	//al hacer click en el botón indicado prendo el switch de toggle
+	/*¿Que hace toggle? Verifica si mi elemento tiene la clase 'fantasma', si la tiene
+	se la quita, si no la tiene se la agrega y así sucesivament.
+	Pone la clase, quita la clase, pone la clase, quita la clase (y así en cada click)
+	*/
 	var parrafoIzquierdo = document.getElementsByClassName('parrafo')[0];
 	parrafoIzquierdo.classList.toggle('fantasma');
 })
 
-/* LO MISMO QUE ARRIBA
+/* LO MISMO QUE ARRIBA PERO OTRO MANERA DE ESCRIBIRLO
 var botonOrigen = document.getElementById('boton-origen');
 botonOrigen.addEventListener('click', parrafoIzquierdo);
 function parrafoIzquierdo(){
@@ -47,7 +52,7 @@ document.getElementById('boton-extincion').addEventListener('click', function(){
 	parrafoIzquierdo.classList.toggle('fantasma');
 })
 
-/* LO MISMO QUE ARRIBA
+/* LO MISMO QUE ARRIBA PERO OTRO MANERA DE ESCRIBIRLO
 var botonExtincion = document.getElementById('boton-extincion');
 botonExtincion.addEventListener('click', parrafoDerecho);
 function parrafoDerecho(){
@@ -59,9 +64,16 @@ function parrafoDerecho(){
 //arreglo de fotos que agrego a mi html como contenido dinámico
 var images = ['assets/img/a1.jpg','assets/img/a2.jpg', 'assets/img/a3.jpg', 'assets/img/a4.jpg'];
 
+//tomo mi div contenedor que está vacío en el HTML
 var contenedor = document.getElementsByClassName('nuevasFotos')[0];
+//recordar que los ClassName funcionan como un arreglo, se debe indicar la posición
 
-images.forEach(function(elemento){
+images.forEach(function(elemento){ 
+	/*recorro mi arreglo y en cada recorrido crea un elemento img
+	le da el atributo src a cada posición iterada
+	le agrega la clase 'nuevos-panda' el que tiene un padding y display inline-block
+	finalmente le paso como hijo las imagenesPanda a su div contenedor
+	*/
 	var imagenesPanda = document.createElement('img');
 	imagenesPanda.setAttribute('src', elemento);
 	imagenesPanda.classList.add('nuevos-panda');
